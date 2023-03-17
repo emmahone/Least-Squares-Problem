@@ -27,7 +27,7 @@ graph TD;
 ```
 
 The normal equations are a set of equations that can be used to find the coefficients of the linear regression model that minimize the sum of squared errors. The normal equations for a simple linear regression model with one independent variable are:
-```
+```css
 b1 = (nΣxy - ΣxΣy) / (nΣx^2 - (Σx)^2)
 b0 = ȳ - b1x̄
 ```
@@ -54,7 +54,7 @@ graph TD;
 NOTE: These are simplified flowcharts and that there may be additional steps or variations depending on the specific problem and approach used to solve it.
 
 Gradient descent is an iterative optimization algorithm that seeks to find the minimum of a function. In the case of the least squares problem, the function to minimize is the sum of squared errors. The algorithm updates the coefficients of the linear regression model in the opposite direction of the gradient of the cost function. The update rule for the coefficients in the gradient descent algorithm is:
-```
+```css
 b1 := b1 - α * Σ(yi - b1xi - b0) * xi
 b0 := b0 - α * Σ(yi - b1xi - b0)
 ```
